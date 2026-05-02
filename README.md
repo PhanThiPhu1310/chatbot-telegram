@@ -11,8 +11,7 @@ The core of this project is a simple but effective NLP pipeline.
 User input is cleaned before processing:
   - Remove extra spaces
   - Standardize casing
-  - andle small typos
-    -> This step improves consistency and helps the bot understand messy real-world input.
+  - andle small typos  -> This step improves consistency and helps the bot understand messy real-world input.
 ### Intent detection (rule-based NLP)
 Instead of using heavy models, the bot uses:
   - Keyword matching
