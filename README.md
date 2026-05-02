@@ -11,26 +11,26 @@ The core of this project is a simple but effective NLP pipeline.
 User input is cleaned before processing:
   - Remove extra spaces
   - Standardize casing
-  - andle small typos
+  - andle small typos  
 -> This step improves consistency and helps the bot understand messy real-world input.
 ### Intent detection (rule-based NLP)
 Instead of using heavy models, the bot uses:
   - Keyword matching
   - Category mapping
-  - Custom logic
+  - Custom logic  
   -> This approach is lightweight but still effective for structured customer queries.
 ### Context handling
 The bot keeps track of previous messages to handle follow-up questions.
 For example:
   “Show me product A”
-  “What about type B?”
-  -> It understands that the second question is related to the first one, which creates a more natural conversation flow.
+  “What about type B?”   
+    -> It understands that the second question is related to the first one, which creates a more natural conversation flow.
 ### Information extraction
 From a single user message, the bot can extract:
   - Product name or code
   - Pricing intent
-  - Promotion-related queries
-  -> This allows flexible queries instead of forcing users to follow strict commands.
+  - Promotion-related queries  
+    -> This allows flexible queries instead of forcing users to follow strict commands.
 
 ## Key Features
 ### Product search & pricing
@@ -54,8 +54,8 @@ Instead of returning raw data, the bot:
 ## Data Handling
 The system uses Excel as a lightweight data source:
   - products.xlsx
-  - promotions.xlsx
-  -> This design keeps the system simple, flexible, and easy to update without modifying code.
+  - promotions.xlsx  
+    -> This design keeps the system simple, flexible, and easy to update without modifying code.
 
 ## Technologies
   - Python
