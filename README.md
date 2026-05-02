@@ -18,19 +18,19 @@ Instead of using heavy models, the bot uses:
   - Keyword matching
   - Category mapping
   - Custom logic
--> This approach is lightweight but still effective for structured customer queries.
+  -> This approach is lightweight but still effective for structured customer queries.
 ### Context handling
 The bot keeps track of previous messages to handle follow-up questions.
 For example:
   “Show me product A”
   “What about type B?”
--> It understands that the second question is related to the first one, which creates a more natural conversation flow.
+  -> It understands that the second question is related to the first one, which creates a more natural conversation flow.
 ### Information extraction
 From a single user message, the bot can extract:
   - Product name or code
   - Pricing intent
   - Promotion-related queries
--> This allows flexible queries instead of forcing users to follow strict commands.
+  -> This allows flexible queries instead of forcing users to follow strict commands.
 
 ## Key Features
 ### Product search & pricing
@@ -53,25 +53,25 @@ Instead of returning raw data, the bot:
 
 ## Data Handling
 The system uses Excel as a lightweight data source:
-  products.xlsx
-  promotions.xlsx
--> This design keeps the system simple, flexible, and easy to update without modifying code.
+  - products.xlsx
+  - promotions.xlsx
+  -> This design keeps the system simple, flexible, and easy to update without modifying code.
 
 ## Technologies
-  Python
-  Telegram Bot API
-  Pandas
-  smtplib
-  Rule-based NLP
+  - Python
+  - Telegram Bot API
+  - Pandas
+  - smtplib
+  - Rule-based NLP
 ## Project Structure
   chatbot-telegram/
-    │── app.py
-    │── products.xlsx
-    │── promotions.xlsx
-    │── README.md
+   - │── app.py
+   - │── products.xlsx
+   - │── promotions.xlsx
+   - │── README.md
 
 ## Future Improvements
-Upgrade NLP to LLM-based understanding
-Replace Excel with database or external API
-Add recommendation system
-Deploy to cloud for real usage
+  - Upgrade NLP to LLM-based understanding
+  - Replace Excel with database or external API
+  - Add recommendation system
+  - Deploy to cloud for real usage
